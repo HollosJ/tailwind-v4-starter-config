@@ -1,4 +1,4 @@
-# CSS Config file for Tailwind V4
+# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="" height="30"/> CSS Config file for Tailwind V4
 
 This is a CSS config file for Tailwind V4 (`global.css`). It is a good starting point for a new project.
 

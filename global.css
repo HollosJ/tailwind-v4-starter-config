@@ -1,13 +1,25 @@
+/* A full changelog for Tailwind V4 can be found here: https://tailwindcss.com/blog/tailwindcss-v4 */
+
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Re-introduce the pointer cursor for all non-disabled buttons */
+/* https://tailwindcss.com/docs/theme */
+@theme {
+  /* Your custom theme styles go here (replaces :root) */
+}
+
+/* Add your own default base styles for specific HTML elements, for example: */
 @layer base {
+  /* Re-introduce the pointer cursor for all non-disabled buttons */
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
   }
+}
+
+@layer components {
+  /* Add your custom component styles here, for example .btn, .btn--primary, .card etc. */
 }
 
 /* Center containers and give them a 1rem padding on either side */
